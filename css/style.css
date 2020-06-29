@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
   font-family: 'Montserrat', sans-serif;
+  background: #151619
 }
 .navbar{
   padding: 0 8%;
@@ -51,6 +52,9 @@ body{
   border-radius: 3px;
   margin: 0 10px;
 }
+.pairstat_carat{
+
+}
 .pairstatsConvbx div{
   margin: 0 10px;
 }
@@ -65,13 +69,31 @@ body{
   font-weight: 500;
    text-shadow:none;
 }
+.topSec{
+  position: relative;
+}
+.topSec:before{
+    position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 56.41%), rgba(8, 9, 11, 0.6);
+  opacity: 0.4;
+  border-radius: 10px;
+  z-index: -1
+}
 
 .pairstats{
-  background:#131416;
-  padding: 2% 8%;
+  padding-top: 4% ;
+  padding-bottom: 2%;
+  margin-right: 8%;
+  margin-left: 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(130, 146, 169, 0.2);
 }
 .pairstatsHeading{
   color: #FFFFFF;
@@ -121,7 +143,6 @@ body{
 
 
 .welcomSection{
-  background:#131416;
   padding: 2% 8%;
   display: flex;
   align-items: center;
@@ -168,7 +189,7 @@ body{
 }
 
 .transformMoneySection{
-  background-color: #212122;
+ 
   padding: 6% 8%;
 
 }
@@ -178,7 +199,7 @@ body{
   background-image: url('../images/transform.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 3em 6em;
+  padding: 2em 6em;
 }
 
 .transformMoney h5{
@@ -260,7 +281,10 @@ body{
 
 .overview_section{
   padding: 5% 8% 10% 8%;
-  background: #0E0F12;
+  background-image: url('../images/overview_sec.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
 }
 
 .overview_section h5{
@@ -309,7 +333,10 @@ body{
 
 .HXBOverview_section{
   padding: 5% 8%;
-  background: #0E0F12;
+   background-image: url('../images/overview_sec.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
 }
 
 .HXBOverview_section h5{
@@ -320,14 +347,12 @@ body{
   margin-bottom: 1em;
 }
 
-.borderless td, .borderless th {
-    border: none ;
+.table-borderless thead{
+  border-bottom: 1px solid rgba(130, 146, 169, 0.2)
 }
-
 
 .PairStatGraph_section{
   padding: 7% 8%;
-  background: #1A1A1B;
 }
 
 
@@ -413,7 +438,6 @@ body{
 
 .ReferralSection{
   padding: 3% 8%;
-  background: #151619;
 }
 
 .ReferralSectionInner{
@@ -464,4 +488,26 @@ body{
   color: #FFE787;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
   margin-right: 20px;
+}
+.tradeRowOuter{
+  padding-right: 1em
+}
+.tradeRowOuter::after{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: radial-gradient(162.1% 108.22% at 199.22% 0%, rgba(139, 151, 177, 0.5) 0%, rgba(92, 99, 114, 0) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-radius: 10px;
+  transform: skew(-8deg);
+
+}
+
+
+.PairStatRow .col-sm-8{
+  transform: skew(-8deg);
 }

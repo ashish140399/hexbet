@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.4">
+  <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.6">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,11 +24,11 @@
     </ul>
   </nav>  
 
-  <section>
+  <section class="topSec">
     <div class="pairstats">
       <div class="d-flex align-items-center">
         <div class="pairstatsHeading">
-          PAIRSTATS
+          <div class="pairstat_carat"></div>PAIRSTATS
         </div>
         <div class="d-flex align-items-center">
           <div class="pairstatsOneunit">1 HXB =</div>
@@ -138,7 +138,7 @@
                     <h5>Lock & Unlock HXB</h5>
                 </div>
                 <div class="table-responsive">
-                    <table id="freezeTable" class="table overview_section_table borderless">
+                    <table id="freezeTable" class="table overview_section_table table-borderless">
                         <thead>
                             <tr>
                                 <th width="5%">#</th>
@@ -213,7 +213,7 @@
       <h5><img src="images/golden_glow.png">PAIR <b>STATS</b></h5>
     </div>
     <div>
-      <div class="row">
+      <div class="row PairStatRow">
         <div class="col-sm-4">
           <div class="tradeRowOuter">
             <div class="tradeRow">
@@ -312,7 +312,7 @@
                     <h5>HXB Overview</h5>
                 </div>
                 <div class="table-responsive ">
-                    <table id="freezeTable" class="table overview_section_table borderless" cellspacing="0" cellpadding="0">
+                    <table id="freezeTable" class="table overview_section_table table-borderless" cellspacing="0" cellpadding="0">
                         <thead>
                             <tr>
                                 <th width="25%">Indicator</th>
@@ -468,8 +468,8 @@ var myChart = new Chart(ctx, {
             data: [0, 5000, 7000, 14040,  14141,  4111, 4544, 2007, 5555, 6811], // Specify the data values array
             fill: false,
             borderColor: '#FFE787', // Add custom color border (Line)
-            backgroundColor: 'transparent', // Add custom color background (Points and Fill)
-            borderWidth: 0 ,// Specify bar border width
+            backgroundColor: '', // Add custom color background (Points and Fill)
+            borderWidth: 1 ,// Specify bar border width
             pointRadius:0
         }]},
     options: {
