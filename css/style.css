@@ -6,7 +6,8 @@ body{
 .navbar{
   padding: 0 8%;
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 56.41%), #08090B !important;
-  border-bottom: 1px solid rgba(255, 231, 135, 0.7)
+  border-bottom: 1px solid rgba(255, 231, 135, 0.7);
+  z-index: 5
 }
 .goldenBgShadow{
   position: absolute;
@@ -23,14 +24,13 @@ body{
   background-image: url('../images/golden_bg.png');
   background-size: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: bold !important;
   font-size: 14px;
   color: #1A1C20 !important;
-  text-shadow: 0px 1px 0px #FFEE88;
   padding: 10px 50px !important;
   transform: translateY(20px);
 }
+
 
 .navbar-brand img{
   height: 56px;
@@ -53,17 +53,16 @@ body{
   border-radius: 3px;
   margin: 0 10px;
 }
-.pairstat_carat{
-
+.userImg{
+  width: 20px;
+  margin-right: 8px;
 }
 .pairstatsConvbx div{
   margin: 0 10px;
 }
 .pairstatsConvbxCircle{
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background:rgba(196, 196, 196, 0.3);
+  width: 16px;
+  height: auto;
 }
 .pairstatsConvName{
   color: #BBCFEC !important;
@@ -87,7 +86,26 @@ body{
   border-radius: 10px;
   z-index: -1
 }
-
+.pairstats:after{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: -50%;
+  background: radial-gradient(50% 50% at 50% 50%, #C4C4C4 0%, rgba(21, 22, 25, 0) 100%);
+  opacity: 0.4;
+  filter: blur(120px);
+  z-index: -1
+}
+.pairstat_carat{
+  height: 16px;
+  width: auto;
+  margin-right: 8px
+}
+.pairstat_carat:hover{
+  cursor: pointer;
+}
 .pairstats{
   padding-top: 4% ;
   padding-bottom: 2%;
@@ -196,21 +214,37 @@ body{
   padding: 3% 8%;
 
 }
+.infoTransform{
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 50px;
+}
+.infoTransform:hover{
+  cursor: pointer;
+}
 .transformMoney{
+  position: relative;
   margin: auto;
   width:45%;
   background-image: url('../images/transform.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 1em 6em;
+  padding: 1em 5em 1em 6em;
 }
-
+.transformBorderLine{
+  border-bottom: 1px solid rgba(255, 231, 135, 0.2);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
 .transformMoney h5{
   color: #FFFFFF;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
   font-weight: normal;
   font-size: 18px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  transform: translateX(-25px);
 }
 .transformMoneyConvBox{
   margin-bottom: 25px;
@@ -230,7 +264,7 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
   border: 0;
-  transform: skewX(-10deg);
+  transform: skewX(-10deg)translateX(-15px);
   border-radius: 3px;
   margin: 0 10px;
   width: -webkit-fill-available;
@@ -243,8 +277,13 @@ body{
     text-shadow: 0px 1px 0px #FFEE88;
     font-weight: 600;
     font-size: 14px;
+    transform: translateX(-15px);
+    width: -webkit-fill-available;
+    margin-right: 15px;
 }
-
+.transformMoneyButton:hover{
+  cursor: pointer;
+}
 .transformMoneyButtonShadow{
   position: absolute;
   height: 100%;
@@ -339,6 +378,7 @@ body{
    background-image: url('../images/overview_sec.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border-top: 1px solid rgba(255, 231, 135, 0.2);
   background-color: transparent;
 }
 
@@ -356,8 +396,21 @@ body{
 
 .PairStatGraph_section{
   padding: 3% 8%;
+  position: relative;
+  overflow: hidden;
 }
-
+.PairStatGraph_sectionInner:before{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: -50%;
+  background: radial-gradient(50% 50% at 50% 50%, #C4C4C4 0%, rgba(21, 22, 25, 0) 100%);
+  opacity: 0.4;
+  filter: blur(250px);
+  z-index: -1
+}
 
 .PairStatGraph_section .pairstatsConvbx div{
   margin: 0
@@ -501,7 +554,7 @@ body{
   height: 100%;
   width: 100%;
   top: 0;
-  right: 0;
+  right: 10px;
   background: radial-gradient(162.1% 108.22% at 199.22% 0%, rgba(139, 151, 177, 0.5) 0%, rgba(92, 99, 114, 0) 100%);
   mix-blend-mode: normal;
   opacity: 0.5;
@@ -513,4 +566,13 @@ body{
 
 .PairStatRow .col-sm-8{
   transform: skew(-8deg);
+}
+.PairStatRow{
+  border-bottom: 1px solid rgba(255, 231, 135, 0.7);
+  margin: 0 ;
+
+}
+.PairStatRowOuterBorder{
+  border-bottom: 1px solid rgba(255, 231, 135, 0.1);
+  padding-bottom: 3px;
 }

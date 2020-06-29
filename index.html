@@ -8,8 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css?ver=2.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css?ver=2.2">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between">
@@ -19,7 +20,7 @@
     <!-- Links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#"><div class="goldenBgShadow"></div>TRY NOW</a>
+        <a class="nav-link" href="#"><div class="goldenBgShadow"></div><b>TRY NOW</b></a>
       </li>
     </ul>
   </nav>  
@@ -27,23 +28,23 @@
   <section class="topSec">
     <div class="pairstats">
       <div class="d-flex align-items-center">
-        <div class="pairstatsHeading">
-          <div class="pairstat_carat"></div>PAIRSTATS
+        <div class="pairstatsHeading d-flex align-items-center">
+          <img src="images/pairstat.png" class="pairstat_carat">PAIRSTATS
         </div>
         <div class="d-flex align-items-center">
           <div class="pairstatsOneunit">1 HXB =</div>
           <div class="pairstatsConvbx">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
           </div>
           <div class="pairstatsConvbx">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
           </div>
           <div class="pairstatsConvbx">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
           </div>
@@ -63,32 +64,32 @@
     <div class="welcomSection">
       <div class="d-flex align-items-center welcomeCol">
         <span>Welcome</span>
-        <div>Pablo</div>
+        <div><img src="images/user.png" class="userImg">PABLO</div>
       </div>
       <div class="d-flex align-items-center">
         <h5>Your Wallet Balance</h5>
         <div class="WalletBalanceBox">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
         </div>
         <div class="WalletBalanceBox">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
         </div>
         <div class="WalletBalanceBox">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
         </div>
         <div class="WalletBalanceBox">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
         </div>
         <div class="WalletBalanceBox WalletBalanceBoxLast">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
         </div>
@@ -99,6 +100,7 @@
 
   <section class="transformMoneySection">
     <div class="transformMoney">
+      <img src="images/info.png" class="infoTransform">
       <h5><img src="images/golden_glow.png">TRANSFORM <b>HXY TO HXB</b></h5>
       <div class="transformMoneyConvBox">
         <label>Send</label>
@@ -113,10 +115,10 @@
         </div>
       </div>
       <div class="transformMoneyConvBox">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between transformBorderLine">
           <label>Receive</label>
           <div class="pairstatsConvbx">
-            <div class="pairstatsConvbxCircle"></div>
+            <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
             <div>1.000</div>
             <div class="pairstatsConvName">HEX</div>
           </div>
@@ -153,7 +155,7 @@
                               <td>1</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -161,7 +163,7 @@
                               <td width="20%">
                                 <div class="pairstatsConvbx">
                                   <div>EARN</div>
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -189,9 +191,9 @@
 
 
   <section class="PairStatGraph_section">
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center PairStatGraph_sectionInner">
       <div class="pairstatsConvbx">
-        <div class="pairstatsConvbxCircle mr-3"></div>
+        <img src="images/icons/hex.png" class="pairstatsConvbxCircle mr-3">
         <div class="d-flex align-items-center mr-3">
           <div class="d-flex mr-2">1 <div class="pairstatsConvName ml-1">HEX =  </div></div>
           <div>0.300</div>
@@ -200,7 +202,7 @@
         <div class="pairstatsConvName">( $ <font style="color: #fff;font-weight: 800">0.001</font> )</div>
       </div>
       <div class="pairstatsConvbx">
-        <div class="pairstatsConvbxCircle mr-3"></div>
+        <img src="images/icons/hex.png" class="pairstatsConvbxCircle mr-3">
         <div class="d-flex align-items-center mr-3">
           <div class="d-flex mr-2">1 <div class="pairstatsConvName ml-1">HEX =  </div></div>
           <div>0.300</div>
@@ -212,7 +214,7 @@
     <div class="PairStatGraph_secHeading">
       <h5><img src="images/golden_glow.png">PAIR <b>STATS</b></h5>
     </div>
-    <div>
+    <div class="PairStatRowOuterBorder">
       <div class="row PairStatRow">
         <div class="col-sm-4">
           <div class="tradeRowOuter">
@@ -264,12 +266,12 @@
                 <div class="tradeRowHeading">Pooled Tokens</div>   
                 <div class="d-flex mt-3">
                   <div class="WalletBalanceBox">
-                    <div class="pairstatsConvbxCircle"></div>
+                    <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                     <div>1.000</div>
                     <div class="pairstatsConvName">HEX</div>
                 </div>   
                 <div class="WalletBalanceBox" style="border-right: 0">
-                    <div class="pairstatsConvbxCircle"></div>
+                    <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                     <div>1.000</div>
                     <div class="pairstatsConvName">HEX</div>
                 </div>       
@@ -326,7 +328,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -334,7 +336,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -344,7 +346,7 @@
                               <td>Max Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -352,7 +354,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -362,7 +364,7 @@
                               <td>Circulating Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -370,7 +372,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -380,7 +382,7 @@
                               <td>Total Locked Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -388,7 +390,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -398,7 +400,7 @@
                               <td>Founder Locked Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -406,7 +408,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -416,7 +418,7 @@
                               <td>Total Interest Earned</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
@@ -424,7 +426,7 @@
                               <td>Total Supply</td>
                               <td>
                                 <div class="pairstatsConvbx">
-                                  <div class="pairstatsConvbxCircle"></div>
+                                  <img src="images/icons/hex.png" class="pairstatsConvbxCircle">
                                   <div>1.000</div>
                                   <div class="pairstatsConvName">HEX</div>
                                 </div>
