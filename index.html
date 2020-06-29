@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between">
@@ -208,6 +209,99 @@
         <div class="pairstatsConvName">( $ <font style="color: #fff;font-weight: 800">0.001</font> )</div>
       </div>
     </div>
+    <div class="PairStatGraph_secHeading">
+      <h5>PAIR <b>STATS</b></h5>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="tradeRowOuter">
+            <div class="tradeRow">
+              <div>
+                <div class="tradeRowHeading">Total Liquidity</div>
+                <div class="tradeRowChange up">+666.111%</div>
+                
+              </div>        
+              <div class="tradeRowRight">
+                <span>$</span>
+                <div>124.427</div>
+              </div>    
+            </div>
+            <div class="tradeRow">
+              <div>
+                <div class="tradeRowHeading">Volume <span>24h</span></div>
+                <div class="tradeRowChange up">+666.111%</div>
+                
+              </div>        
+              <div class="tradeRowRight">
+                <span>$</span>
+                <div>19.427</div>
+              </div>    
+            </div>
+            <div class="tradeRow">
+              <div>
+                <div class="tradeRowHeading">Fees <span>24h</span></div>
+                <div class="tradeRowChange down">-0.13%</div>
+                
+              </div>        
+              <div class="tradeRowRight">
+                <span>$</span>
+                <div>58.53</div>
+              </div>    
+            </div>
+            <div class="tradeRow">
+              <div>
+                <div class="tradeRowHeading">Transactions <span>24h</span></div>
+                <div class="tradeRowChange down">-3.33%</div>
+                
+              </div>        
+              <div class="tradeRowRight">
+                <div>65</div>
+              </div>    
+            </div>
+            <div class="tradeRow">
+              <div>
+                <div class="tradeRowHeading">Pooled Tokens</div>   
+                <div class="d-flex mt-3">
+                  <div class="WalletBalanceBox">
+                    <div class="pairstatsConvbxCircle"></div>
+                    <div>1.000</div>
+                    <div class="pairstatsConvName">HEX</div>
+                </div>   
+                <div class="WalletBalanceBox" style="border-right: 0">
+                    <div class="pairstatsConvbxCircle"></div>
+                    <div>1.000</div>
+                    <div class="pairstatsConvName">HEX</div>
+                </div>       
+                  
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 ">
+
+          <div class="d-flex chartLablesOuter">
+            <div class="d-flex chartLables">
+              <div class="selected">Liquidity</div>
+              <div>Volume</div>
+            </div>
+            <div class="borderHeight"></div>
+            <div class="d-flex chartLables">
+              <div class="selected">1 Week</div>
+              <div>All Time</div>
+            </div>
+          </div>
+         <div style="position: absolute;height: 85%;width: 100%;bottom: 0">
+            <canvas id="myChart"></canvas>
+         </div>
+         
+       
+
+
+        </div>
+      </div>
+    </div>
     
   </section>
 
@@ -343,5 +437,51 @@
         </div>
     </section>
 
+
+
+<script type="text/javascript">
+  var ctx = document.getElementById("myChart").getContext('2d');
+
+
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["June 16", "June 16", "June 16", "June 16", "June 16", "June 16", "June 16", "June 16", "June 16", "June 16"],
+        datasets: [{
+            label: 'Series 1', // Name the series
+            data: [0, 5000, 7000, 14040,  14141,  4111, 4544, 2007, 5555, 6811], // Specify the data values array
+            fill: false,
+            borderColor: '#FFE787', // Add custom color border (Line)
+            backgroundColor: 'transparent', // Add custom color background (Points and Fill)
+            borderWidth: 0 ,// Specify bar border width
+            pointRadius:0
+        }]},
+    options: {
+      responsive: true, // Instruct chart js to respond nicely.
+      maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+      scales: {
+            xAxes: [{ 
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                  fontColor: "rgba(255, 231, 135, 0.5)", // this here
+                },
+            }],
+            yAxes: [{
+                ticks: {
+                  fontColor: "rgba(187, 207, 236, 0.5)", // this here
+                },
+                gridLines: {
+                    display: false,
+                },
+            }],
+        },
+        legend: {
+         display: false //This will do the task
+      }
+    }
+});
+</script>
 </body>
 </html>
