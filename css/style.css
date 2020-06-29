@@ -407,8 +407,8 @@ body{
   right: 0;
   top: -50%;
   background: radial-gradient(50% 50% at 50% 50%, #C4C4C4 0%, rgba(21, 22, 25, 0) 100%);
-  opacity: 0.4;
-  filter: blur(250px);
+  opacity: 0.1;
+  filter: blur(200px);
   z-index: -1
 }
 
