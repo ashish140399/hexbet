@@ -6,6 +6,7 @@ body{
 .navbar{
   padding: 0 8%;
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 56.41%), #08090B !important;
+  border-bottom: 1px solid rgba(255, 231, 135, 0.7)
 }
 .goldenBgShadow{
   position: absolute;
@@ -71,6 +72,8 @@ body{
 }
 .topSec{
   position: relative;
+  border-top: 1px solid rgba(255, 231, 135, 0.2);
+  margin-top: 3px;
 }
 .topSec:before{
     position: absolute;
