@@ -174,12 +174,11 @@ body{
 }
 .transformMoney{
   margin: auto;
-  width:40%;
-  background-image: url('../images/black_big_bg.png');
+  width:45%;
+  background-image: url('../images/transform.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3em;
-  transform: skewX(-20deg);
+  background-size: 100% 100%;
+  padding: 3em 6em;
 }
 
 .transformMoney h5{
