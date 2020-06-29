@@ -177,8 +177,9 @@ body{
   width:40%;
   background-image: url('../images/black_big_bg.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 3em;
+  transform: skewX(-20deg);
 }
 
 .transformMoney h5{
@@ -186,6 +187,7 @@ body{
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
   font-weight: normal;
   font-size: 18px;
+  margin-bottom: 2em;
 }
 .transformMoneyConvBox{
   margin-bottom: 25px;
@@ -258,8 +260,8 @@ body{
 
 
 .overview_section{
-  padding: 3% 8%;
-  background: #151618;
+  padding: 5% 8% 10% 8%;
+  background: #0E0F12;
 }
 
 .overview_section h5{
@@ -267,6 +269,7 @@ body{
   font-size: 26px;
   color: #FFFFFF;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+  margin-bottom: 1em
 }
 #freezeTable thead th{
   font-weight: 500;
@@ -306,8 +309,8 @@ body{
 
 
 .HXBOverview_section{
-  padding: 3% 8%;
-  background: #151618;
+  padding: 5% 8%;
+  background: #0E0F12;
 }
 
 .HXBOverview_section h5{
@@ -315,6 +318,7 @@ body{
   font-size: 26px;
   color: #FFFFFF;
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+  margin-bottom: 1em;
 }
 
 .borderless td, .borderless th {
@@ -323,7 +327,7 @@ body{
 
 
 .PairStatGraph_section{
-  padding: 3% 8%;
+  padding: 7% 8%;
   background: #1A1A1B;
 }
 
@@ -405,3 +409,60 @@ body{
   border-bottom: 1px solid rgba(130, 146, 169, 0.1)
 }
 
+
+
+
+.ReferralSection{
+  padding: 3% 8%;
+  background: #151619;
+}
+
+.ReferralSectionInner{
+  background-image: url('../images/referral_bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ReferralSectionInner span{
+  font-weight: 500;
+  font-size: 14px;
+  color: #BBCFEC;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+}
+.ReferralUrl{
+  background-image: url('../images/referral_bg_inner.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 1em 2em;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 15px;
+  color: #FFFFFF;
+}
+.ReferralSectionurlOuter{
+   padding: 0 1em;
+}
+
+
+
+
+
+
+
+.ReferralButton img{
+  width: 40px;
+  height: auto;
+}
+.ReferralButton:hover{
+  cursor: pointer;
+}
+.ReferralSectionInner a{
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFE787;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+  margin-right: 20px;
+}
