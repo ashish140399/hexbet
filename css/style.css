@@ -304,8 +304,8 @@ header{
   outline: none;
 }
 .pairs-btn .btn .caret{
-  width: 36px;
-  height: 30px;
+  width: 24px;
+  height: 20px;
   border: none;
   background-image: url('../images/icons/drop-down.png');
   background-size: 100% 100%;
