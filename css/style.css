@@ -274,7 +274,7 @@ header{
 .pairs-btn{
   display: flex;
   align-items: center;
-  padding-top: 14px;
+  padding-top: 9px;
   margin-right: 25px;
 }
 .pairs-btn .btn{
@@ -304,8 +304,8 @@ header{
   outline: none;
 }
 .pairs-btn .btn .caret{
-  width: 24px;
-  height: 20px;
+  width: 36px;
+  height: 30px;
   border: none;
   background-image: url('../images/icons/drop-down.png');
   background-size: 100% 100%;
@@ -912,6 +912,7 @@ table.dataTable td {
   padding: 50px 0;
   background-color: #151619;
 }
+
 .chart-top{
   width: 100%;
   display: block;
@@ -989,6 +990,7 @@ table.dataTable td {
   width: 100%;
   display: flex;
   align-items: center;
+
 }
 /*.chart-wrapper:before,
 .chart-wrapper:after{
@@ -1025,6 +1027,7 @@ table.dataTable td {
   float: right;
   width: 67%;
   margin-left: 3%;
+
 }
 
 .chart-sid-list{
@@ -1118,50 +1121,54 @@ table.dataTable td {
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(139, 151, 177, 0.1);
 }
-.crt-title li,
-.chart-sid-ft li{
+.crt-title div,
+.chart-sid-ft div{
   float: left;
   padding: 0 10px;
   border-right: 0.7px solid rgb(139, 151, 177, 0.1);
 }
-.crt-title li:last-child,
-.chart-sid-ft li:last-child{
+.crt-title div:last-child,
+.chart-sid-ft div:last-child{
   border: none;
   padding-right: 0;
   margin: 0;
 }
-
-.crt-title li:first-child,
-.chart-sid-ft li:first-child{
+.crt-title .nav-link{
+  padding: 0;
+  color: #BBCFEC;
+  padding: 0;
+  height: auto;
+  background-image: none;
+}
+.crt-title div:first-child,
+.chart-sid-ft div:first-child{
   padding-left: 0;
 }
 .chart-sid-ft p{
   padding: 0;
   background-image: none;
 }
-
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #FFE787;
+    background-color: transparent;
+    font-weight: 600;
+}
+ .nav-pills>li>a:hover {
+    color: #FFE787;
+    background-color: transparent;
+}
 .crt-title{
   width: auto;
-  display: table;
+  display: flex;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(139, 151, 177, 0.1);
 }
 .crt-title li{
   margin: 0;
-  padding: 0 30px;
+  padding: 0 10px;
 }
-.crt-title p{
-  font-weight: 600;
-  color: #FFE787;
-  padding: 0;
-  height: auto;
-  background-image: none;
-}
-.crt-title p span{
-  margin-left: 20px;
-  color: #BBCFEC;
-}
+
 /* End Chaart */
 /* Footer */
 .ref-footer{

@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.25" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.27" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Home - Hex.Net</title>
@@ -250,8 +250,28 @@
                 </div>
                 <div class="chart-block">
                     <ul class="crt-title">
-                        <li><p>Liquidy <span>Volume</span></p></li>
-                        <li><p>1 Week <span>All time</span></p></li>
+                        <div> 
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item active">
+                                  <a class="nav-link" data-toggle="pill" href="#home">Liquify</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="pill" href="#menu1">Volume</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div> 
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item active">
+                                  <a class="nav-link " data-toggle="pill" href="#home">1 Week</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" data-toggle="pill" href="#menu1">All Time</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--li><p>Liquidy <span>Volume</span></p></li>
+                        <li><p>1 Week <span>All time</span></p></li-->
                     </ul>
                     <canvas id="myChart" height="400" width="100%"></canvas>
                 </div>
@@ -360,7 +380,8 @@
                     fill: true,
                     borderColor: '#FFE787', // Add custom color border (Line)
                     backgroundColor: 'rgba(255, 231, 135, 0.015)', // Add custom color background (Points and Fill)
-                    borderWidth: 1 // Specify bar border width
+                    borderWidth: 1, // Specify bar border width
+                    pointRadius:0
                 }]},
             options: {
               responsive: true, // Instruct chart js to respond nicely.
