@@ -243,8 +243,10 @@
 	/*hex-credit end*/
 }
 @media(min-width:1551px) and (max-width:1799px){
-
-		.navbar-default .container {
+	.about-normal .about-img {
+	    min-height: 50vh;
+	}
+	.navbar-default .container {
 	    width: 100%;
 	    padding: 0 5%;
 	}
