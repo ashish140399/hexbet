@@ -3817,6 +3817,9 @@
 	/*Hex Credit res end*/
 }
 @media(max-width:447px){
+	.hexcredit-num ul li a{
+		height: 50px
+	}
 	.hex-loan li img{
 		width: 48px!important;
     	height: 48px!important;
@@ -4019,13 +4022,16 @@
 		padding-bottom: 50px;
 	}
 	.hex-table .table tbody tr td{
-		padding: 15px;
+		padding:5px 15px;
 	}
 	.hex-block{
 		padding: 20px;
 	}
 	.hex-table-title h4{
 		font-size: 26px;
+	}
+	.hex-table-title{
+		margin-bottom: 20px
 	}
 	.table-responsive{
 		border: none;
