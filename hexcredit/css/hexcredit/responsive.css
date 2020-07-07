@@ -908,6 +908,155 @@
 	/*Inner page end*/
 }
 @media(min-width:1200px) and (max-width:1350px){
+
+
+	.navbar-default .container {
+	    width: 100%;
+	    padding: 0 5%;
+	}
+	.navbar-default .navbar-nav>li>a{
+		font-size: 15px !important
+	}
+
+	.navbar-default .navbar-nav>li>.btn-main{
+		padding: 10px 15px;
+	}
+	.btn-main{
+		padding: 10px 30px !important;
+	}
+	.banner-details p {
+	    font-size: 18px;
+	    line-height: 30px;
+	    margin-bottom: 30px;
+	}
+	.hexcredit-num ul li a{
+		height: 50px;
+    	width: 50px;
+	}
+	.hx-cr-main .hex-form input.form-control, .hx-cr-main .hex-form .hex-select select.form-control {
+	    height: 50px;
+	}
+	.hex-form span{
+		bottom: 12px;
+		font-size: 16px !important;
+	}
+	.hex-form .form-control{
+		font-size: 16px !important;
+	}
+	.hex-table h5 {
+	    font-size: 26px !important;
+	}
+	.hex-chart-table .table tbody tr td .btn-main{
+		height: 40px;
+		font-size: 14px;
+	}
+	.hex-chart-table .table tbody tr td {
+	    vertical-align: middle;
+	}
+	.hex-chart-table .hex-table .table tbody tr td p{
+		height: auto;
+	}
+	.hexcredit-page .main-title{
+		font-size: 22px;
+    	line-height: 24px;
+    	margin: 1.5em 0 1.5em 0;
+    	text-align: center;
+	}
+	.hexcredit-page .about-details .main-title{
+		font-size: 22px;
+    	line-height: 24px;
+    	margin-bottom: 5px;
+    	margin: 0;
+    	text-align: left;
+	}
+	.about-details{
+		margin-top: 0px !important;
+	}
+	.about-details .title-btn{
+		margin-bottom: 10px !important;
+	}
+	.hex-credit-mbform .hex-form .form-control{
+		height: 40px;
+	}
+	.hexcredit-num ul li a{margin: auto;}
+	.hex-credit-mbform .hex-form .hex-select{margin-bottom: 20px;}
+	.hex-credit-mbform .hex-form label{
+		    margin: 0 0 10px;
+	}
+	.hex-credit-mbform .hextabs-block{
+		    padding: 50px 55px 100px 55px;
+		    min-height: unset;
+		        width: 350px;
+		        transform: scale(0.8);
+    transform-origin: top;
+	}
+	.hex-credit-mbform .hex-form label{
+		font-size: 14px
+	}
+	.about-wrapper{
+		margin-bottom: 0 !important;
+		
+	}
+	.about-sld:before{
+		    height: 70%;
+	}
+	.hexcredit-page .title-logo img{
+		height: 20px;
+	}
+	.hexcredit-page .title-logo{
+		margin-bottom: 10px;
+		padding: 10px 16px;
+	}
+
+	/**** hex loan***/
+	.hex-loan li p span{
+		font-size: 12px;
+		margin-top: 0px;
+	}
+	.hex-loan li img{
+		width: 45px!important;
+    	height: 45px!important;
+	}
+	.about-hexcredit .hex-loan li {
+	    min-height: unset;
+	}
+	.about-normal .about-img:before{
+		top: 0 !important
+	}
+	.about-normal .about-img img {
+	    max-width: 60%;
+	    margin: auto !important;
+	}
+	.about-normal{
+		margin-bottom: 0 !important
+	}
+
+	/***** footer****/
+	.footer-list li {
+	    margin-bottom: 10px !important;
+	}
+	.footer-list h4 {
+	    margin: 0 0 20px !important;
+	}
+
+	/**** footer end***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*comman css*/
 	.container{
   		max-width: 100%;
@@ -1210,6 +1359,167 @@
 	/*Hex Credit res end*/
 }
 @media(min-width:1025px) and (max-width:1199px){
+
+
+	.navbar-default .container {
+	    width: 100%;
+	    padding: 0 5%;
+	}
+	.navbar-default .navbar-nav>li>a{
+		font-size: 15px !important
+	}
+
+	.navbar-default .navbar-nav>li>.btn-main{
+		padding: 10px 15px;
+	}
+	.btn-main{
+		padding: 10px 30px !important;
+	}
+	.banner-details p {
+	    font-size: 18px;
+	    line-height: 30px;
+	    margin-bottom: 30px;
+	}
+	.hexcredit-num ul li a{
+		height: 50px;
+    	width: 50px;
+	}
+	.hx-cr-main .hex-form input.form-control, .hx-cr-main .hex-form .hex-select select.form-control {
+	    height: 50px;
+	}
+	.hex-form span{
+		bottom: 12px;
+		font-size: 16px !important;
+	}
+	.hex-form .form-control{
+		font-size: 16px !important;
+	}
+	.hex-table h5 {
+	    font-size: 26px !important;
+	}
+	.hex-chart-table .table tbody tr td .btn-main{
+		height: 40px;
+		font-size: 14px;
+	}
+	.hex-chart-table .table tbody tr td {
+	    vertical-align: middle;
+	}
+	.hex-chart-table .hex-table .table tbody tr td p{
+		height: auto;
+	}
+	.hexcredit-page .main-title{
+		font-size: 22px !important;
+    	line-height: 24px;
+    	margin: 1em 0;
+    	text-align: center;
+	}
+	.hexcredit-currencies{
+		padding: 0px 0 30px;
+	}
+	.hexcredit-page .about-details .main-title{
+		font-size: 22px;
+    	line-height: 24px;
+    	margin-bottom: 5px;
+    	margin: 0;
+    	text-align: left;
+	}
+	.about-details{
+		margin-top: 0px !important;
+	}
+	.about-details .title-btn{
+		margin-bottom: 10px !important;
+	}
+	.hex-credit-mbform .hex-form .form-control{
+		height: 40px;
+	}
+	.hexcredit-num ul li a{margin: auto;}
+	.hex-credit-mbform .hex-form .hex-select{margin-bottom: 20px;}
+	.hex-credit-mbform .hex-form label{
+		    margin: 0 0 10px;
+	}
+	.hex-credit-mbform .hextabs-block{
+	    padding: 50px 55px 100px 55px;
+	    min-height: unset;
+        width: 350px;
+        transform: scale(0.7);
+    	transform-origin: top;
+    	margin-bottom: -80px;
+	}
+	.hex-credit-mbform .hex-form label{
+		font-size: 14px
+	}
+	.about-wrapper{
+		margin-bottom: 0 !important;
+		
+	}
+	.about-sld:before{
+		    height: 70%;
+	}
+	.hexcredit-page .title-logo img{
+		height: 20px;
+	}
+	.hexcredit-page .title-logo{
+		margin-bottom: 10px;
+		padding: 10px 16px;
+	}
+
+	/**** hex loan***/
+	.hex-loan li p span{
+		font-size: 12px;
+		margin-top: 0px;
+	}
+	.hex-loan li img{
+		width: 45px!important;
+    	height: 45px!important;
+	}
+	.about-hexcredit .hex-loan li {
+	    min-height: unset;
+	}
+	.about-normal .about-img:before{
+		top: 0 !important
+	}
+	.
+	.about-normal .about-img{
+		margin-top: 0px;
+	    min-height: 40vh;
+	}
+	.about-normal .about-img img {
+	    max-width: 60%;
+	    margin: auto !important;
+	}
+	.about-normal{
+		margin-bottom: 0 !important
+	}
+
+	/***** footer****/
+	.footer-list li {
+	    margin-bottom: 10px !important;
+	}
+	.footer-list h4 {
+	    margin: 0 0 20px !important;
+	}
+
+	/**** footer end***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*comman css*/
 	.btn-main{
 		font-size: 16px;
@@ -1594,11 +1904,174 @@
 	/*Hex Credit res end*/
 }
 @media(min-width:992px) and (max-width:1024px){
-	/*comman css*/
-	.btn-main{
-		font-size: 16px;
-		padding: 16px 40px;
+
+
+
+
+
+
+
+	
+	.banner-logo img{
+		max-width: 70%;
 	}
+	.btn-main{
+		padding: 10px 30px !important;
+	}
+	.banner-details p {
+	    font-size: 18px;
+	    line-height: 30px;
+	    margin-bottom: 30px;
+	}
+	.hexcredit-num ul li a{
+		height: 50px;
+    	width: 50px;
+	}
+	.hx-cr-main .hex-form input.form-control, .hx-cr-main .hex-form .hex-select select.form-control {
+	    height: 50px;
+	}
+	.hex-form span{
+		bottom: 12px;
+		font-size: 16px !important;
+	}
+	.hex-form .form-control{
+		font-size: 16px !important;
+	}
+	.hex-table h5 {
+	    font-size: 26px !important;
+	}
+	.hex-chart-table .table tbody tr td .btn-main{
+		height: 40px;
+		font-size: 14px;
+	}
+	.hex-chart-table .table tbody tr td {
+	    vertical-align: middle;
+	}
+	.hex-chart-table .hex-table .table tbody tr td p{
+		height: auto;
+	}
+	.hexcredit-page .main-title{
+		font-size: 22px !important;
+    	line-height: 24px;
+    	margin: 1em 0;
+    	text-align: center;
+	}
+	.hexcredit-currencies{
+		padding: 0px 0 30px;
+	}
+	.hexcredit-page .about-details .main-title{
+		font-size: 22px;
+    	line-height: 24px;
+    	margin: 0;
+    	margin-bottom: 10px;
+    	text-align: left;
+	}
+	.about-details{
+		margin-top: 0px !important;
+	}
+	.about-details .title-btn{
+		margin-bottom: 10px !important;
+	}
+	.hex-credit-mbform .hex-form .form-control{
+		height: 40px;
+	}
+	.hexcredit-num ul li a{margin: auto;}
+	.hex-credit-mbform .hex-form .hex-select{margin-bottom: 20px;}
+	.hex-credit-mbform .hex-form label{
+		    margin: 0 0 10px;
+	}
+	.hex-credit-mbform .hextabs-block{
+	    padding: 50px 55px 100px 55px;
+	    min-height: unset;
+        width: 350px;
+        transform: scale(0.7);
+    	transform-origin: top;
+    	margin-bottom: -80px;
+	}
+	.hex-credit-mbform .hex-form label{
+		font-size: 14px
+	}
+	.about-wrapper{
+		margin-bottom: 0 !important;
+		
+	}
+	.about-sld:before{
+		    height: 70%;
+	}
+	.hexcredit-page .title-logo img{
+		height: 20px;
+	}
+	.hexcredit-page .title-logo{
+		margin-bottom: 20px;
+		padding: 10px 16px;
+	}
+
+	/**** hex loan***/
+	.hex-loan li p span{
+		font-size: 12px;
+		margin-top: 0px;
+	}
+	.hex-loan li img{
+		width: 45px!important;
+    	height: 45px!important;
+	}
+	.about-hexcredit .hex-loan li {
+	    min-height: unset;
+	}
+	.about-normal .about-img:before{
+		top: 0 !important
+	}
+	.
+	.about-normal .about-img{
+		margin-top: 0px;
+	    min-height: 40vh;
+	}
+	.about-normal .about-img img {
+	    max-width: 60%;
+	    margin: auto !important;
+	}
+	.about-normal{
+		margin-bottom: 0 !important
+	}
+
+	/***** footer****/
+	.footer-list li {
+	    margin-bottom: 10px !important;
+	}
+	.footer-list h4 {
+	    margin: 0 0 20px !important;
+	}
+
+	/**** footer end***/
+	.hexcredit-page .join-btn {
+	    width: 25%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*comman css*/
+
 
 	.main-title{
 		font-size: 34px;
@@ -1981,12 +2454,109 @@
 	}
 	/*Hex Credit res end*/
 }
-@media(min-width:768px) and (max-width:991px){+
-	/*comman css*/
+@media(min-width:768px) and (max-width:991px){
+
+	
 	.btn-main{
-		font-size: 16px;
-		padding: 16px 40px;
+		padding: 10px 30px !important;
 	}
+	.navbar .btn-main{
+		padding: 10px 20px !important;
+	}
+
+	.hx-cr-main .hex-form input.form-control, .hx-cr-main .hex-form .hex-select select.form-control {
+	    height: 50px;
+	}
+	.hex-form span{
+		bottom: 12px;
+		font-size: 16px !important;
+	}
+	.hex-chart-table .table tbody tr td .btn-main{
+		height: 40px;
+		font-size: 14px;
+	}
+	.hex-chart-table .table tbody tr td {
+	    vertical-align: middle;
+	}
+	.hex-chart-table .hex-table .table thead tr th:first-child, .hex-chart-table .hex-table .table tbody tr td:first-child{
+		min-width: 20px
+	}
+	.hex-chart-table .hex-table .table tbody tr td p{
+		margin-right: 10px
+	}
+	.hex-table h5 {
+	    font-size: 22px !important;
+	}
+	.hex-table .table tbody tr td{
+		padding: 5px 0
+	}
+	.hex-credit-mbform .hextabs-block{
+	    padding: 50px 55px 100px 55px;
+	    min-height: unset;
+        width: 350px;
+        transform: scale(0.7);
+    	transform-origin: top;
+    	margin-bottom: -200px;
+	}
+	.hex-credit-mbform .hex-form .form-control{
+		height: 40px;
+	}
+	.hexcredit-num ul li a{margin: auto;}
+	.hex-credit-mbform .hex-form .hex-select{margin-bottom: 20px;}
+	.hex-credit-mbform .hex-form label{
+		    margin: 0 0 10px;
+	}
+	.hex-credit-mbform .hex-form label{
+		font-size: 14px
+	}
+	.hexcredit-page .main-title{
+		font-size: 26px !important;
+    	line-height: 40px !important;
+	}
+	.about-details .title-btn{
+		margin-bottom: 20px;
+	}
+	.about-wrapper{
+		margin-bottom: 0 !important
+	}
+	.about-normal .about-img img{
+		max-width: 60%;
+	}
+
+
+	.hexcredit-page .title-logo{
+		margin-bottom: 20px;
+	}
+
+	.about-hexcredit .hex-loan li{
+		min-height: unset;
+	}
+	.hexcredit-page .join-btn{
+		width: 250px;
+	}
+	.join-wrapepr{
+		min-height: 150px !important;
+	}
+	.hexcredit-page .main-title{
+		font-size: 20px !important;
+    	line-height: 30px !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*comman css*/
 
 	.main-title{
 		font-size: 30px;
@@ -2495,6 +3065,115 @@
 	/*Hex Credit res end*/
 }
 @media(min-width:448px) and (max-width:767px){
+
+	.btn-main{
+		padding: 10px 30px !important;
+	}
+	.navbar .btn-main{
+		padding: 10px 20px !important;
+	}
+
+	.hx-cr-main .hex-form input.form-control, .hx-cr-main .hex-form .hex-select select.form-control {
+	    height: 50px;
+	}
+	.hex-form span{
+		bottom: 12px;
+		font-size: 16px !important;
+	}
+	.hex-chart-table .table tbody tr td .btn-main{
+		height: 40px;
+		font-size: 14px;
+	}
+	.hex-chart-table .table tbody tr td {
+	    vertical-align: middle;
+	}
+	.hex-chart-table .hex-table .table thead tr th:first-child, .hex-chart-table .hex-table .table tbody tr td:first-child{
+		min-width: 20px
+	}
+	.hex-chart-table .hex-table .table tbody tr td p{
+		margin-right: 10px
+	}
+	.hex-table h5 {
+	    font-size: 22px !important;
+	}
+	.hex-table .table tbody tr td{
+		padding: 5px 0
+	}
+	.hex-credit-mbform .hextabs-block{
+	    padding: 50px 55px 100px 55px;
+	    min-height: unset;
+        width: 350px;
+        transform: scale(0.7);
+    	transform-origin: top;
+    	margin-bottom: -200px;
+	}
+	.hex-credit-mbform .hex-form .form-control{
+		height: 40px;
+	}
+	.hexcredit-num ul li a{margin: auto;}
+	.hex-credit-mbform .hex-form .hex-select{margin-bottom: 20px;}
+	.hex-credit-mbform .hex-form label{
+		    margin: 0 0 10px;
+	}
+	.hex-credit-mbform .hex-form label{
+		font-size: 14px
+	}
+	.hexcredit-page .main-title{
+		font-size: 26px !important;
+    	line-height: 40px !important;
+	}
+	.about-details .title-btn{
+		margin-bottom: 20px;
+	}
+	.about-wrapper{
+		margin-bottom: 0 !important
+	}
+	.about-normal .about-img img{
+		max-width: 60%;
+	}
+
+
+	.hexcredit-page .title-logo{
+		margin-bottom: 20px;
+	}
+
+	.about-hexcredit .hex-loan li{
+		min-height: unset;
+	}
+	.hexcredit-page .join-btn{
+		width: 250px;
+	}
+	.join-wrapepr{
+		min-height: 150px !important;
+	}
+	.hexcredit-page .main-title{
+		font-size: 20px !important;
+    	line-height: 30px !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/*comman css*/
 	.btn-main{
 		font-size: 16px;
@@ -3135,6 +3814,105 @@
 	/*Hex Credit res end*/
 }
 @media(max-width:447px){
+	.btn-main{
+		padding: 10px 30px !important;
+	}
+	.navbar .btn-main{
+		padding: 10px 20px !important;
+	}
+
+	.hx-cr-main .hex-form input.form-control, .hx-cr-main .hex-form .hex-select select.form-control {
+	    height: 50px;
+	}
+	.hex-form span{
+		bottom: 12px;
+		font-size: 16px !important;
+	}
+	.hex-chart-table .table tbody tr td .btn-main{
+		height: 40px;
+		font-size: 14px;
+	}
+	.hex-chart-table .table tbody tr td {
+	    vertical-align: middle;
+	}
+	.hex-chart-table .hex-table .table thead tr th:first-child, .hex-chart-table .hex-table .table tbody tr td:first-child{
+		min-width: 20px
+	}
+	.hex-chart-table .hex-table .table tbody tr td p{
+		margin-right: 10px
+	}
+	.hex-table h5 {
+	    font-size: 22px !important;
+	}
+	.hex-table .table tbody tr td{
+		padding: 5px 0
+	}
+	.hex-credit-mbform .hextabs-block{
+	    padding: 50px 55px 100px 55px;
+	    min-height: unset;
+        width: 350px;
+        transform: scale(0.7);
+    	transform-origin: top;
+    	margin-bottom: -200px;
+	}
+	.hex-credit-mbform .hex-form .form-control{
+		height: 40px;
+	}
+	.hexcredit-num ul li a{margin: auto;}
+	.hex-credit-mbform .hex-form .hex-select{margin-bottom: 20px;}
+	.hex-credit-mbform .hex-form label{
+		    margin: 0 0 10px;
+	}
+	.hex-credit-mbform .hex-form label{
+		font-size: 14px
+	}
+	.hexcredit-page .main-title{
+		font-size: 26px !important;
+    	line-height: 40px !important;
+	}
+	.about-details .title-btn{
+		margin-bottom: 20px;
+	}
+	.about-wrapper{
+		margin-bottom: 0 !important
+	}
+	.about-normal .about-img img{
+		max-width: 60%;
+	}
+
+
+	.hexcredit-page .title-logo{
+		margin-bottom: 20px;
+	}
+
+	.about-hexcredit .hex-loan li{
+		min-height: unset;
+	}
+	.hexcredit-page .join-btn{
+		width: 250px;
+	}
+	.join-wrapepr{
+		min-height: 150px !important;
+	}
+	.hexcredit-page .main-title{
+		font-size: 20px !important;
+    	line-height: 30px !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	/*comman css*/
 	.btn-main{
 		font-size: 14px;
