@@ -3065,6 +3065,9 @@
 	/*Hex Credit res end*/
 }
 @media(min-width:448px) and (max-width:767px){
+	.about-details img{
+		height: 24px;
+	}
 
 	.btn-main{
 		padding: 10px 30px !important;
@@ -3814,6 +3817,13 @@
 	/*Hex Credit res end*/
 }
 @media(max-width:447px){
+	.hex-loan li img{
+		width: 48px!important;
+    	height: 48px!important;
+	}
+	.about-details img{
+		height: 24px;
+	}
 	.btn-main{
 		padding: 10px 30px !important;
 	}
@@ -3912,7 +3922,7 @@
 
 
 
-	
+
 	/*comman css*/
 	.btn-main{
 		font-size: 14px;
@@ -4132,14 +4142,14 @@
 	}
 	.hex-loan li,
 	.hex-money li, .hex-deposit{
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 		padding: 20px;
 		display: table;
 	}
 	.hex-loan li img,
 	.hex-deposit li img,
 	.hex-money li img{
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 	.about-img,
 	.about-project .about-img, .about-msg .about-img, .about-transform .about-img, .about-normal .about-img{
@@ -4702,7 +4712,7 @@
 	}
 
 	.hexcredit-page .hex-loan li{
-		display: block;
+		display: flex;
 	}
 
 	.hexcredit-wrapper .hex-total p{
