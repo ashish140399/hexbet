@@ -2550,3 +2550,24 @@ input[type=number] {
   display: flex;
   align-items: center;
 }
+
+
+
+.hex-block .hex-table .btn-tb{
+  display: flex;
+}
+
+.hex-block .hex-table .btn-tb a{
+  padding: 5px 15px !important;
+  display: block;
+  margin: 0 10px 0 0
+}
+
+.hex-block .hex-table .btn-tb a:hover{
+  cursor: pointer;
+  box-shadow: 0 10px 6px -6px rgba(0,0,0,0.2);
+}
+
+.hex-block .hex-table tbody td p{
+  margin: 0
+}
