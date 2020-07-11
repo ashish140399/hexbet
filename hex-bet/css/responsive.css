@@ -328,6 +328,35 @@
 
 
 @media(min-width:1200px) and (max-width:1350px){
+
+	.dice-head-blk{
+		width: 75%;
+		margin-left: 18%;
+	}
+	.dice-num-blk{
+		    margin-left: 10%;
+		        width: 80%;
+	}
+	.dice-chart-blk{
+		margin-left: 8%;
+		        width: 82%;
+	}
+
+	.banner-moon .banner-bet-wrapper {
+	    width: 65% !important;
+	    margin-left: 4%;
+	}
+
+
+
+
+
+
+
+
+
+
+	
 	/* comman */
 	/* comman end */
 	/* header */
@@ -566,6 +595,30 @@
 	/*dice page end*/
 	/*inner page end*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(min-width:1025px) and (max-width:1199px){
 	/* comman */
 	/* comman end */

@@ -9,17 +9,32 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.1" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Home - Hex.Bet</title>
 </head>
 <body>
+    <style type="text/css">
+        .chat-wrapper{
+            display: none;
+        }
+        .btn-chat{
+            display: block;
+        }
+        .sidenav .closebtn{
+          display: block;
+        }
+        .btn-close-chat{
+            display: none;
+        }
+    </style>
     
     <!-- Chat Box -->
     <button class="btn-main btn-chat" onclick="openNav()"><i class="fa fa-comment"></i></button>
+    <button class="btn-main btn-close-chat" onclick="closeNav()"><i class="fa fa-times"></i></button>
     <div class="chat-wrapper sidenav main-chat" id="chat-side">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
         <div class="chat-block">
             <div class="chat-top">
                 <h4>Chat</h4>
@@ -432,13 +447,22 @@
             }
         });
 
-        //sidenav
+        //sidenav.
         function openNav() {
-          document.getElementById("chat-side").style.width = "290px";
+          // document.getElementById("chat-side").style.width = "290px";
+          $(".btn-chat").css("display","none");
+          $(".chat-wrapper").css("display","block"); 
+          $(".btn-close-chat").css("display","block");
+          $('.chat-message').animate({
+                scrollTop: $('.chat-left').get(0).scrollHeight
+            }, 400);
         }
 
         function closeNav() {
-          document.getElementById("chat-side").style.width = "0";
+          // document.getElementById("chat-side").style.width = "0";
+          $(".btn-close-chat").css("display","none");
+          $(".chat-wrapper").css("display","none");
+          $(".btn-chat").css("display","block");
         }
     </script>
 </body>
