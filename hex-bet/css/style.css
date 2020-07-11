@@ -2278,7 +2278,7 @@ table.dataTable td {
   width: 100%;
   display: block;
   background-color: #151619;
-  border-bottom: 2px solid #2f2c21;
+  border-bottom: 1px solid #2f2c21;
 }
 .banner-inner .inner-title{
   font-weight: 900;
@@ -2314,7 +2314,7 @@ table.dataTable td {
 
 .banner-bet-wrapper{
   width: 70%;
-  padding: 20px 40px;
+  padding: 20px 40px 24px 40px;
   position: relative;
   display: flex;
   margin: 42px 0 -40px;
