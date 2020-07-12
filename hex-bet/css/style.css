@@ -1280,7 +1280,7 @@ table.dataTable td {
   background-image: url('../images/shape/ft-line-2.png');
 }
 .navbar-header{
-  width: 15%;
+  width: 10%;
 }
 .navbar-brand{
   padding: 0;
@@ -1298,9 +1298,17 @@ table.dataTable td {
 .navbar-default .navbar-nav{
   float: left;
   margin: 0px 0 0;
-  width: 85%;
+  width: 90%;
   margin-left: 0%;
 }
+.navbar-container{
+  width: 80% !important;
+  margin-left: 14%;
+  margin-right: 6%;
+}
+
+
+
 .navbar-default .navbar-nav>li{
     margin-right: 30px;
     position: relative;
@@ -1403,7 +1411,9 @@ table.dataTable td {
   color: #1A1C20;
 }
 
-
+.navbar-nav{
+  display: flex;
+}
 .navbar-nav>li>.dropdown-menu{
   padding: 15px 0;
   border-radius: 10px;
@@ -2117,6 +2127,7 @@ table.dataTable td {
 .navbar-default .navbar-nav>.notify-btn{
   margin-top: 4px;
   margin-right: 0;
+  margin-left: auto;
 }
 .navbar-default .navbar-nav>.notify-btn>a{
   width: auto;
@@ -2223,6 +2234,8 @@ table.dataTable td {
   background-position: 10% center;
   padding-left: 40px;
   position: relative;
+  align-self: flex-end;
+  margin-left: auto;
 }
 .navbar-default .navbar-nav>.nv-select:after{
   content: '';
@@ -2326,12 +2339,12 @@ table.dataTable td {
   content: '';
   position: absolute;
   width: 98%;
-  height: 7px;
-  bottom: -12px;
+  height: 4px;
+  bottom: -9px;
   left: 1px;
   background-image: url('../images/shape/line-border.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:cover;
   background-position: l
 }
 .winner-banner .banner-bet-wrapper{
@@ -2897,7 +2910,12 @@ z-index: -1
 
 
 
+.navbar-inline-outer{
+  display: flex;
+}
 
-
+.navbar-inline{
+  padding: 0
+}
 
 
