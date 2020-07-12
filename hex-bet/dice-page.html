@@ -10,16 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.5"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.0.5" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.6"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.0.6" />
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Home - Hex.Bet Dice</title>
 </head>
 <body>
     
     <!-- Chat Box -->
-    <button class="btn-main btn-chat" onclick="openNav()"><i class="fa fa-comment"></i></button>
-    <button class="btn-main btn-close-chat" onclick="closeNav()"><i class="fa fa-times"></i></button>
+    <button class="btn-main btn-chat" id="btn-ochat"><i class="fa fa-comment"></i></button>
+    <button class="btn-main btn-close-chat"><i class="fa fa-times"></i></button>
     <div class="chat-wrapper sidenav" id="chat-side">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="chat-block">
@@ -441,24 +441,55 @@
 
        
         
-        function openNav() {
-          // document.getElementById("chat-side").style.width = "290px";
-          $(".btn-chat").css("display","none");
-          $(".chat-wrapper").css("display","block"); 
-          $(".btn-close-chat").css("display","block");
-          $('.chat-message').animate({
-                scrollTop: $('.chat-left').get(0).scrollHeight
-            }, 400);
-        }
+   </script>
+    <script>
+        
+            var width = $(window).width();
+            console.log(width)
+            if (width < 1200){
+                $('.btn-close-chat').css("top","230px");
+                 $('.btn-close-chat').hide();
+                $('.btn-chat').css("top","230px")
+                $("#btn-ochat").click(function(){                  
+                  $("#btn-ochat").hide()
+                  $(".sidenav").css("width","290px"); 
+                  $(".chat-wrapper").show();
+                  $(".btn-close-chat").show();
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+            
+                });
 
-        function closeNav() {
-          // document.getElementById("chat-side").style.width = "0";
-          $(".btn-close-chat").css("display","none");
-          $(".chat-wrapper").css("display","none");
-          $(".btn-chat").css("display","block");
-        }
+                $(".btn-close-chat").click(function(){  
+                  document.getElementById("chat-side").style.width = "0";
+                   $(".btn-close-chat").hide();
+                  $(".sidenav").css("width","0");
+                  $(".btn-chat").show();
+                 
+                });
+            }else{
+
+                $(".btn-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "290px";
+                  $(".btn-chat").css("display","none");
+                  $(".chat-wrapper").css("display","block"); 
+                  $(".btn-close-chat").css("display","block");
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "0";
+                  $(".btn-close-chat").css("display","none");
+                  $(".chat-wrapper").css("display","none");
+                  $(".btn-chat").css("display","block");
+                });
+            
+            }
+       
     </script>
-
     <script type="text/javascript">
         //range slider
         var $r = $('input[type="range"]');

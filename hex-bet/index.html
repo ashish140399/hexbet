@@ -28,11 +28,14 @@
         .btn-close-chat{
             display: none;
         }
+        .navbar-default .navbar-nav{
+                justify-content: flex-end;
+        }
     </style>
     
     <!-- Chat Box -->
-    <button class="btn-main btn-chat" onclick="openNav()"><i class="fa fa-comment"></i></button>
-    <button class="btn-main btn-close-chat" onclick="closeNav()"><i class="fa fa-times"></i></button>
+    <button class="btn-main btn-chat" id="btn-ochat"><i class="fa fa-comment"></i></button>
+    <button class="btn-main btn-close-chat"><i class="fa fa-times"></i></button>
     <div class="chat-wrapper sidenav main-chat" id="chat-side">
         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
         <div class="chat-block">
@@ -448,22 +451,54 @@
         });
 
         //sidenav.
-        function openNav() {
-          // document.getElementById("chat-side").style.width = "290px";
-          $(".btn-chat").css("display","none");
-          $(".chat-wrapper").css("display","block"); 
-          $(".btn-close-chat").css("display","block");
-          $('.chat-message').animate({
-                scrollTop: $('.chat-message').get(0).scrollHeight
-            }, 400);
-        }
-
-        function closeNav() {
-          // document.getElementById("chat-side").style.width = "0";
-          $(".btn-close-chat").css("display","none");
-          $(".chat-wrapper").css("display","none");
-          $(".btn-chat").css("display","block");
-        }
+        
     </script>
+    <script>
+        
+            var width = $(window).width();
+            console.log(width)
+            if (width < 1200){
+                $('.btn-close-chat').css("top","230px")
+                $("#btn-ochat").click(function(){                  
+                  $("#btn-ochat").hide()
+                  $(".sidenav").css("width","290px"); 
+                  $(".chat-wrapper").show();
+                  $(".btn-close-chat").show();
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+            
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  document.getElementById("chat-side").style.width = "0";
+                   $(".btn-close-chat").hide();
+                  $(".sidenav").css("width","0");
+                  $(".btn-chat").show();
+                 
+                });
+            }else{
+
+                $(".btn-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "290px";
+                  $(".btn-chat").css("display","none");
+                  $(".chat-wrapper").css("display","block"); 
+                  $(".btn-close-chat").css("display","block");
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "0";
+                  $(".btn-close-chat").css("display","none");
+                  $(".chat-wrapper").css("display","none");
+                  $(".btn-chat").css("display","block");
+                });
+            
+            }
+       
+    </script>
+    
 </body>
 </html>
