@@ -2325,27 +2325,37 @@ table.dataTable td {
   max-width: 100%;
 }
 
+.banner-bet-wrapper:before{
+  content: '';
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../images/shape/footer-bg-sq.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: skewX(-6deg);
+}
+
 .banner-bet-wrapper{
   width: 70%;
   padding: 20px 40px 24px 40px;
   position: relative;
   display: flex;
   margin: 42px 0 -40px;
-  background-image: url('../images/shape/footer-bg.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 .banner-bet-wrapper:after{
   content: '';
   position: absolute;
   width: 98%;
-  height: 4px;
-  bottom: -9px;
-  left: 1px;
+  height: 5px;
+  bottom: -10px;
+  left: -6px;
   background-image: url('../images/shape/line-border.png');
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: l
 }
 .winner-banner .banner-bet-wrapper{
   background-size: 90% 100%;
@@ -2554,9 +2564,11 @@ table.dataTable td {
   z-index: -1;
   top: 18px;
   left: -2%;
-  /*transform: skewX(-8deg);*/
-  /*background-color: #0b0c0d;*/
-  background-image: url(../images/shape/shadow-02.png);
+  transform: skewX(-6deg);
+  background: linear-gradient(90deg, #000000 3.03%, rgba(0, 0, 0, 0) 59.36%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+ /* background-image: url(../images/shape/shadow-02.png);*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2623,6 +2635,23 @@ table.dataTable td {
   display: block;
   transform: skewX(-6deg);
   padding-left: 60px;
+  position: relative;
+}
+.moon-chart-blk:after{
+  z-index: 10;
+  content: '';
+  position: absolute;
+  top: 30%;
+  width:100px;
+  height: 100px;
+ 
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  background: conic-gradient(from 248.54deg at 93.33% 20.91%, #DAC25E -77.96deg, #ECC560 15.03deg, #EAC76C 22.23deg, #DEA446 28.7deg, #FFEB71 49.46deg, #E2C064 69.42deg, #9D7329 108.54deg, #F1C065 210.97deg, #CFA63C 247.87deg, #DAC25E 282.04deg, #ECC560 375.03deg);
+opacity: 0.7;
+filter: blur(120px);
+transform: rotate(45deg);
 }
 /*Moon Page end*/
 /*Dice Page*/

@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.8" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.0.6" />
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Home - Hex.Bet Moon</title>
 </head>
@@ -374,6 +374,54 @@
     <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
     <script type="text/javascript" src="js/dataTables.responsive.js"></script>
     <script type="text/javascript" src="js/chart.js"></script>
+    <script>
+        
+            var width = $(window).width();
+            console.log(width)
+            if (width < 1200){
+                $('.btn-close-chat').css("top","230px");
+                 $('.btn-close-chat').hide();
+                $('.btn-chat').css("top","230px")
+                $("#btn-ochat").click(function(){                  
+                  $("#btn-ochat").hide()
+                  $(".sidenav").css("width","290px"); 
+                  $(".chat-wrapper").show();
+                  $(".btn-close-chat").show();
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+            
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  document.getElementById("chat-side").style.width = "0";
+                   $(".btn-close-chat").hide();
+                  $(".sidenav").css("width","0");
+                  $(".btn-chat").show();
+                 
+                });
+            }else{
+
+                $(".btn-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "290px";
+                  $(".btn-chat").css("display","none");
+                  $(".chat-wrapper").css("display","block"); 
+                  $(".btn-close-chat").css("display","block");
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "0";
+                  $(".btn-close-chat").css("display","none");
+                  $(".chat-wrapper").css("display","none");
+                  $(".btn-chat").css("display","block");
+                });
+            
+            }
+       
+    </script>
     <script type="text/javascript">
         //wow animation js
         new WOW().init();
@@ -391,9 +439,9 @@
                 datasets: [{
                     label: 'Series 1', // Name the series
                     data: [1000, 35000, 23000, 140000,  200000], // Specify the data values array
-                    fill: false,
+                    fill: true,
                     borderColor: '#FFE787', // Add custom color border (Line)
-                    backgroundColor: '#FFE787', // Add custom color background (Points and Fill)
+                    backgroundColor: 'rgba(255, 231, 135, 0.1)', // Add custom color background (Points and Fill)
                     borderWidth: 1 // Specify bar border width
                 }]},
             options: {
@@ -403,13 +451,13 @@
         });
 
         //sidenav
-        function openNav() {
-          document.getElementById("chat-side").style.width = "290px";
-        }
+        // function openNav() {
+        //   document.getElementById("chat-side").style.width = "290px";
+        // }
 
-        function closeNav() {
-          document.getElementById("chat-side").style.width = "0";
-        }
+        // function closeNav() {
+        //   document.getElementById("chat-side").style.width = "0";
+        // }
     </script>
 </body>
 </html>
