@@ -471,6 +471,9 @@ var myChart = new Chart(ctx_live, {
       display: false
     },
     scales: {
+     xAxes: [{
+            display: false //this will remove all the x-axis grid lines
+        }],
       yAxes: [{
         ticks: {
           beginAtZero: true,
@@ -495,10 +498,9 @@ endtime=endtime*10
 // logic to get new data
 var getData = function() {
   
-      // process your data to pull out what you plan to use to update the chart
-      // e.g. new label and a new data point
+
       
-      // add new label and data point to chart's underlying data structures
+      // for x axis
       myChart.data.labels.push(postId=postId+2);
       myChart.data.datasets[0].data.push(yAxisId=yAxisId+2+getRandomIntInclusive(1, 20)/10);
       
