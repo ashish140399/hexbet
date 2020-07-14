@@ -179,6 +179,10 @@ p{
   background-size: 100% 100%;
   border-radius: 3px;
 }
+.btn-main-spin{
+  padding: 15px 40px;
+  width: 200px
+}
 .btn-main:focus,
 .btn-main:hover{
   color: #333;
@@ -2327,6 +2331,10 @@ table.dataTable td {
   border-radius: 10px;
   display: flex;
   padding: 20px
+}
+.reel img{
+  height:  100%;
+  margin: 0px auto
 }
 .winner-block-inner-block{
   position: relative;

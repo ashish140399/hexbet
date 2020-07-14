@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.11" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.13" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Home - Hex.Bet Winner</title>
@@ -200,6 +200,7 @@
   .reel {
 
 
+
     text-align:center;
     float: left;
     padding:0 10px;
@@ -212,16 +213,17 @@
   }
     .reel div {
       position: relative;
-      top: -48px;
+      top: -100px;
     }
     .reel p {
       font-weight: bold;
-      height: 60px;
-      margin-top: 10px;
+      height: 100px;
+      margin: 0;
     }
-    .reel p:nth-child(1) {color:#c60}
-    .reel p:nth-child(2) {color:#690}
-    .reel p:nth-child(3) {color:#630}
+    .btn-main-spin:focus:before{
+        top: 10px;
+        left: 5px;
+    }
 
 
 
@@ -255,7 +257,7 @@
                             </div>
                         </div>
                         <div class="banner-bet-btn">
-                            <button class="btn-main msg">Spin</button>
+                            <button class="btn-main msg btn-main-spin">Spin</button>
                             <div class="pairs-process">
                                 <div class="pairs-process-blk">
                                     <div class="progress">
@@ -521,13 +523,34 @@
 */
 var sm = (function (undefined) {
   var tMax = 3000, // animation time, ms
-    height = 210,
+    height = 600, //.reel p height* no of elements in the below array of object of reels
     speeds = [],
     r = [],
     reels = [
-      ["coffee maker", "teapot", "espresso machine"],
-      ["coffee filter", "tea strainer", "espresso tamper"],
-      ["coffee grounds", "loose tea", "ground espresso beans"]
+        [
+            "<img src='images/slotmachine/bar.svg'>",
+            "<img src='images/slotmachine/cherry.svg'>",
+            "<img src='images/slotmachine/lemon.svg'>",
+            "<img src='images/slotmachine/seven.svg'>",
+            "<img src='images/slotmachine/watermelon.svg'>",
+            "<img src='images/slotmachine/prune.svg'>"
+        ],
+        [
+            "<img src='images/slotmachine/bar.svg'>",
+            "<img src='images/slotmachine/cherry.svg'>",
+            "<img src='images/slotmachine/lemon.svg'>",
+            "<img src='images/slotmachine/seven.svg'>",
+            "<img src='images/slotmachine/watermelon.svg'>",
+            "<img src='images/slotmachine/prune.svg'>"
+        ],
+        [
+            "<img src='images/slotmachine/bar.svg'>",
+            "<img src='images/slotmachine/cherry.svg'>",
+            "<img src='images/slotmachine/lemon.svg'>",
+            "<img src='images/slotmachine/seven.svg'>",
+            "<img src='images/slotmachine/watermelon.svg'>",
+            "<img src='images/slotmachine/prune.svg'>"
+        ],
     ],
     $reels,
     $msg,
@@ -578,7 +601,7 @@ var sm = (function (undefined) {
   function check() {
     $msg.html(
       r[0] === r[1] && r[1] === r[2]
-        ? "You won! Enjoy your " +
+        ? "You won!" +
             reels[1][(r[0] / 70 + 1) % 3 | 0].split(" ")[0]
         : "Try again"
     );
