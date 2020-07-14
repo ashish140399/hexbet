@@ -2322,15 +2322,17 @@ table.dataTable td {
 
 .winner-block{
   width: 600px;
-  margin: 0 auto;
-  display: block;
+  margin-right: 30%;
+  margin-left: auto;;
 }
 
 .winner-block-inner{
   background-color: #000;
   border-radius: 10px;
   display: flex;
-  padding: 20px
+  padding: 20px;
+  border: 1px solid #FFE787;
+  border-radius: 10px;
 }
 .reel img{
   height:  100%;
@@ -2338,12 +2340,13 @@ table.dataTable td {
 }
 .winner-block-inner-block{
   position: relative;
-  background-image: url('../images/winner-block.png');
+  background-image: url('../images/single.png');
   height: 300px;
-  
+  border-radius: 20px;
   background-size: 100% 100%;
   width: 200px;
-  margin: 10px 0px
+  margin: 10px 5px;
+
 }
 .banner-bet-wrapper:before{
   content: '';
@@ -2357,6 +2360,11 @@ table.dataTable td {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transform: skewX(-6deg);
+ background: rgba(36,38,42,0.7);
+mix-blend-mode: normal;
+border: 0.7px solid rgba(130, 146, 169, 0.1);
+box-sizing: border-box;
+border-radius: 3px;
 }
 
 .banner-bet-wrapper{
@@ -2380,9 +2388,7 @@ table.dataTable td {
 .winner-banner .banner-bet-wrapper{
   background-size: 90% 100%;
 }
-.winner-banner .banner-bet-wrapper:after{
-  width: 88%;
-}
+
 .banner-bet-blk{
   width: 100%;
   display: block;
@@ -2489,6 +2495,7 @@ table.dataTable td {
   width: 65%;
   position: relative;
   margin: 42px auto -30px;
+  top: 12px;
 }
 
 .banner-inner-wrapper{
@@ -2514,6 +2521,12 @@ table.dataTable td {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+}
+.banner-winner .banner-bet-wrapper:before{
+  width: 90%;
+}
+.banner-winner .banner-bet-wrapper:after{
+  width: 90%;
 }
 
 .chart-list-cl{
@@ -2968,5 +2981,6 @@ z-index: -1
 .navbar-inline{
   padding: 0
 }
+
 
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.13" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.15" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Home - Hex.Bet Winner</title>
@@ -17,7 +17,8 @@
 <body>
     
     <!-- Chat Box -->
-    <button class="btn-main btn-chat" onclick="openNav()"><i class="fa fa-comment"></i></button>
+    <button class="btn-main btn-chat" id="btn-ochat"><i class="fa fa-comment"></i></button>
+    <button class="btn-main btn-close-chat"><i class="fa fa-times"></i></button>
     <div class="chat-wrapper sidenav" id="chat-side">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="chat-block">
@@ -198,16 +199,10 @@
 }
 
   .reel {
-
-
-
     text-align:center;
-    float: left;
-    padding:0 10px;
     width: 100%;
     height: 100px;
     overflow: hidden;
-    margin-right: 20px;
     border-radius: 10px;
    
   }
@@ -231,7 +226,7 @@
 
 
                     </style>
-                    <div class="banner-bet-wrapper">
+                    <div class="banner-bet-wrapper banner-bet-wrapper-winner">
                         <div class="banner-bet-blk">
                             <div class="banner-bet-label">
                                 <label>Bet</label>
@@ -568,7 +563,7 @@ var sm = (function (undefined) {
 
     $msg = $(".msg");
 
-    $("button").click(action);
+    $(".msg").click(action);
   }
 
   function action() {
@@ -612,6 +607,54 @@ var sm = (function (undefined) {
 
 $(sm.init);
 
+    </script>
+    <script>
+        
+            var width = $(window).width();
+            console.log(width)
+            if (width < 1200){
+                $('.btn-close-chat').css("top","230px");
+                 $('.btn-close-chat').hide();
+                $('.btn-chat').css("top","230px")
+                $("#btn-ochat").click(function(){                  
+                  $("#btn-ochat").hide()
+                  $(".sidenav").css("width","290px"); 
+                  $(".chat-wrapper").show();
+                  $(".btn-close-chat").show();
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+            
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  document.getElementById("chat-side").style.width = "0";
+                   $(".btn-close-chat").hide();
+                  $(".sidenav").css("width","0");
+                  $(".btn-chat").show();
+                 
+                });
+            }else{
+
+                $(".btn-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "290px";
+                  $(".btn-chat").css("display","none");
+                  $(".chat-wrapper").css("display","block"); 
+                  $(".btn-close-chat").css("display","block");
+                  $('.chat-message').animate({
+                        scrollTop: $('.chat-message').get(0).scrollHeight
+                    }, 400);
+                });
+
+                $(".btn-close-chat").click(function(){  
+                  // document.getElementById("chat-side").style.width = "0";
+                  $(".btn-close-chat").css("display","none");
+                  $(".chat-wrapper").css("display","none");
+                  $(".btn-chat").css("display","block");
+                });
+            
+            }
+       
     </script>
 </body>
 </html>
