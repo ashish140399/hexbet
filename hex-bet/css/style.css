@@ -2317,15 +2317,26 @@ table.dataTable td {
 }
 
 .winner-block{
-  width: 43%;
+  width: 600px;
   margin: 0 auto;
   display: block;
 }
-.winner-block img{
-  margin: 0 auto;
-  max-width: 100%;
-}
 
+.winner-block-inner{
+  background-color: #000;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px
+}
+.winner-block-inner-block{
+  position: relative;
+  background-image: url('../images/winner-block.png');
+  height: 300px;
+  
+  background-size: 100% 100%;
+  width: 200px;
+  margin: 10px 0px
+}
 .banner-bet-wrapper:before{
   content: '';
   position: absolute;
