@@ -1,0 +1,1 @@
+2.0.0 - Complete restructuring of all games to a more modular and easier to install approach.

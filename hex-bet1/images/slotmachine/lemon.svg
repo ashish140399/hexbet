@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="146.454px" height="146.454px" viewBox="0 0 146.454 146.454" enable-background="new 0 0 146.454 146.454"
+	 xml:space="preserve">
+<g>
+	<path fill="#B65627" d="M84.618,41.025c10.802,1.697,24.104,8.237,32.44,23.598c8.338,15.359,8.591,11.837,11.934,14.337
+		c3.342,2.5,4.335,10.85-1.312,13.969c-5.645,3.119-11.159,14.754-21.017,23.053c-9.344,7.867-22.128,11.529-37.488,10.815
+		c-15.36-0.711-20.65-3.677-29.709-10.843c-9.056-7.168-10.347-17.212-14.374-20.019c-4.03-2.809-11.268-4.459-10.14-11.399
+		c1.128-6.939,5.553-5.795,9.313-10.302c3.762-4.507,11.14-19.605,25.17-26.793C63.466,40.254,73.102,39.214,84.618,41.025z"/>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="73.2618" y1="44.6563" x2="73.2618" y2="125.3053">
+			<stop  offset="0" style="stop-color:#F6EB16"/>
+			<stop  offset="0.4612" style="stop-color:#FED401"/>
+			<stop  offset="0.7401" style="stop-color:#FADE0B"/>
+			<stop  offset="1" style="stop-color:#F6EB16"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" d="M84.032,43.208c10.25,1.612,22.872,7.82,30.781,22.395c7.908,14.575,8.15,11.233,11.321,13.605
+			c3.171,2.374,4.111,10.295-1.245,13.254c-5.357,2.96-10.59,14-19.945,21.873c-8.867,7.464-20.998,10.938-35.572,10.259
+			c-14.575-0.677-19.595-3.49-28.189-10.292c-8.593-6.802-9.816-16.332-13.638-18.997c-3.823-2.664-10.691-4.232-9.62-10.816
+			c1.071-6.585,5.269-5.498,8.838-9.774c3.57-4.276,10.572-18.603,23.886-25.422C63.962,42.475,73.106,41.489,84.032,43.208z"/>
+		<path fill="#FDBA12" d="M28.417,92.433c4.05,2.454,6.345,12.992,13.36,17.693c7.013,4.702,17.145,8.967,30.648,9.047
+			c13.503,0.077,26.412-5.414,33.82-13.185c7.407-7.77,15.923-14.725,21.53-17.661c0.062-0.031,0.118-0.067,0.178-0.101
+			c-0.534,1.705-1.619,3.25-3.408,4.238c-5.358,2.958-10.59,13.998-19.945,21.871c-8.868,7.464-20.999,10.938-35.573,10.261
+			c-14.575-0.678-19.595-3.491-28.188-10.294c-8.593-6.8-9.816-16.331-13.639-18.996c-3.619-2.522-9.961-4.064-9.72-9.809
+			C20.404,88.678,25.718,90.796,28.417,92.433z"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="71.3277" y1="97.3679" x2="72.6839" y2="48.7727">
+			<stop  offset="0" style="stop-color:#F0EA3E"/>
+			<stop  offset="0.1154" style="stop-color:#F1EA44"/>
+			<stop  offset="0.2553" style="stop-color:#F2EB56"/>
+			<stop  offset="0.4082" style="stop-color:#F3ED70"/>
+			<stop  offset="0.5701" style="stop-color:#F5F08D"/>
+			<stop  offset="0.7392" style="stop-color:#F8F4AF"/>
+			<stop  offset="0.9118" style="stop-color:#FBF9D8"/>
+			<stop  offset="1" style="stop-color:#FEFDEF"/>
+		</linearGradient>
+		<path fill="url(#SVGID_2_)" d="M28.461,77.226c0,0,16.091-31.637,46.927-30.489c33.835,1.147,40.066,25.604,40.066,25.604
+			s-25.063-12.334-37.353-4.887C65.812,74.899,43.161,84.906,28.461,77.226z"/>
+	</g>
+	<ellipse fill="#FDBA12" cx="57.594" cy="100.012" rx="3.299" ry="2.566"/>
+	<ellipse fill="#FDBA12" cx="92.42" cy="86.449" rx="3.299" ry="2.565"/>
+	<ellipse fill="#FDBA12" cx="81.422" cy="108.444" rx="3.299" ry="2.565"/>
+	<ellipse fill="#FDBA12" cx="114.415" cy="93.047" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="108.55" cy="78.979" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="104.885" cy="88.648" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="93.153" cy="97.446" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="102.685" cy="99.646" rx="2.063" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="121.014" cy="83.515" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="90.954" cy="77.65" rx="2.062" ry="1.604"/>
+	<ellipse opacity="0.5" fill="#FDBA12" cx="84.951" cy="90.114" rx="2.062" ry="1.604"/>
+	<ellipse opacity="0.5" fill="#FDBA12" cx="74.823" cy="101.112" rx="2.062" ry="1.604"/>
+	<ellipse opacity="0.5" fill="#FDBA12" cx="62.36" cy="93.78" rx="2.062" ry="1.604"/>
+	<ellipse opacity="0.5" fill="#FDBA12" cx="63.826" cy="103.311" rx="2.062" ry="1.604"/>
+	<ellipse opacity="0.5" fill="#FDBA12" cx="54.294" cy="110.643" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="74.823" cy="91.58" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="65.292" cy="108.444" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="92.42" cy="109.91" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="85.821" cy="100.378" rx="2.062" ry="1.603"/>
+	<ellipse fill="#FDBA12" cx="71.158" cy="116.508" rx="2.062" ry="1.604"/>
+	<ellipse fill="#FDBA12" cx="44.03" cy="105.511" rx="2.062" ry="1.602"/>
+	<ellipse fill="#FDBA12" cx="37.431" cy="95.383" rx="2.062" ry="1.604"/>
+</g>
+</svg>
